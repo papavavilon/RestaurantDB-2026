@@ -17,7 +17,7 @@ WHERE b.customerID = @customer_id
 ORDER BY b.startAt;
 
 -- 3. Bookings for one table on a given date, including customer details.
--- For demonstration, table 2 has two bookings on 2026-10-23.
+
 SET @table_id = Petro;
 SET @booking_date = '2026-10-23';
 SELECT b.bookingID, rt.tableNumber, b.startAt, b.endAt,
