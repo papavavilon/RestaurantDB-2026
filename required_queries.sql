@@ -7,7 +7,7 @@ JOIN Restaurant AS r ON r.restaurantID = rt.restaurantID
 ORDER BY r.name, rt.tableNumber;
 
 -- 2. Bookings for one customer in chronological order. 
-SET @customer_id = Anna;
+SET @customer_id = 1;
 SELECT b.bookingID, b.startAt, b.endAt, b.guestCount,
        rt.tableNumber, r.name AS restaurantName
 FROM Booking AS b
@@ -18,7 +18,7 @@ ORDER BY b.startAt;
 
 -- 3. Bookings for one table on a given date, including customer details.
 
-SET @table_id = Petro;
+SET @table_id = 2;
 SET @booking_date = '2026-10-23';
 SELECT b.bookingID, rt.tableNumber, b.startAt, b.endAt,
        b.guestCount, c.customerID, c.firstName, c.lastName, c.phone
