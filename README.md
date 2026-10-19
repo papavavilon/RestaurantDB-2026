@@ -8,12 +8,6 @@ A restaurant booking database. The booking application itself is outside the sco
 - `restaurantdb.sql`: creates the isolated `restaurantdb_denys_2026` database and inserts sample data.
 - `required_queries.sql`: the three requested SELECT queries.
 
-## How to run in XAMPP
-
-1. Start Apache and MySQL in XAMPP. Open `http://localhost/phpmyadmin`.
-2. Select **Import**, choose `restaurantdb.sql`, and click **Import / Go**. The script creates its own database; you don't need to create one manually.
-3. Select `restaurantdb_denys_2026` in the left sidebar and check that Restaurant, RestaurantTable, Customer and Booking are present.
-4. Open **SQL**, paste `required_queries.sql`, and click **Go**. The first query should show five tables. The second should show Anna's two bookings. The third should show two bookings for table 2 on 2026-10-23.
 
 ## Design and normalization
 
